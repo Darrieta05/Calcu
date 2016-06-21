@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     private char operador;
 
     private double resultado;
+
+    private EditText txtOperacion;
 
     private Button btn0;
     private Button btn1;
@@ -38,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
         a = "";
         b = "";
         operador = ' ';
-        
+
+        txtOperacion = (EditText) findViewById(R.id.edit);
         Button btn0 = (Button) findViewById(R.id.cero);
         Button btn1 = (Button) findViewById(R.id.uno);
         Button btn2 = (Button) findViewById(R.id.dos);
@@ -50,120 +54,52 @@ public class MainActivity extends AppCompatActivity {
         Button btn8 = (Button) findViewById(R.id.ocho);
         Button btn9 = (Button) findViewById(R.id.nueve);
 
-        btn0.setOnClickListener(new View.OnClickListener() {
+        iniciarBotonNumero(btn0, "0");
+        iniciarBotonNumero(btn1, "1");
+        iniciarBotonNumero(btn2, "2");
+        iniciarBotonNumero(btn3, "3");
+        iniciarBotonNumero(btn4, "4");
+        iniciarBotonNumero(btn5, "5");
+        iniciarBotonNumero(btn6, "6");
+        iniciarBotonNumero(btn7, "7");
+        iniciarBotonNumero(btn8, "8");
+        iniciarBotonNumero(btn9, "9");
+
+        Button btnDividir = (Button) findViewById(R.id.divide);
+        Button btnMultiplicar = (Button) findViewById(R.id.por);
+        Button btnRestar = (Button) findViewById(R.id.menos);
+        Button btnSumar = (Button) findViewById(R.id.mas);
+
+        iniciarBotonOperador(btnDividir, '/');
+        iniciarBotonOperador(btnMultiplicar, 'x');
+        iniciarBotonOperador(btnRestar, '-');
+        iniciarBotonOperador(btnSumar, '+');
+    }
+
+    protected void iniciarBotonNumero(Button btnAhora, final String numero) {
+        btnAhora.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (operador == ' ') {
-                    if (!a.isEmpty()) {
-                        a += "0";
-                    }
+                    a += numero;
+                    txtOperacion.setText(a);
                 } else {
-                    if (!b.isEmpty()) {
-                        b += "0";
-                    }
+                    b += numero;
+                    txtOperacion.setText(a + operador + b);
                 }
             }
         });
+    }
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+    protected void iniciarBotonOperador(Button btnAhora, final char letra) {
+        btnAhora.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (operador == ' ') {
-                    a += "1";
-                } else {
-                    b += "1";
-                }
+                operador = letra;
+                String ahora = txtOperacion.getText().toString();
+                txtOperacion.setText(ahora + operador);
             }
         });
-
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (operador == ' ') {
-                    a += "1";
-                } else {
-                    b += "1";
-                }
-            }
-        });
-
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (operador == ' ') {
-                    a += "1";
-                } else {
-                    b += "1";
-                }
-            }
-        });
-
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (operador == ' ') {
-                    a += "1";
-                } else {
-                    b += "1";
-                }
-            }
-        });
-
-        btn5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (operador == ' ') {
-                    a += "1";
-                } else {
-                    b += "1";
-                }
-            }
-        });
-
-        btn6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (operador == ' ') {
-                    a += "1";
-                } else {
-                    b += "1";
-                }
-            }
-        });
-
-        btn7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (operador == ' ') {
-                    a += "1";
-                } else {
-                    b += "1";
-                }
-            }
-        });
-
-        btn8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (operador == ' ') {
-                    a += "1";
-                } else {
-                    b += "1";
-                }
-            }
-        });
-
-        btn9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (operador == ' ') {
-                    a += "1";
-                } else {
-                    b += "1";
-                }
-            }
-        });
-
     }
 
 }
