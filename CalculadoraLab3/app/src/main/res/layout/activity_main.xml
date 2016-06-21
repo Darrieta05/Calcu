@@ -12,27 +12,35 @@
 
 
     <EditText
+        android:hint="0"
+        android:id="@+id/edit"
+        android:textSize="24pt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+            android:textSize="12pt"
+            android:text="ADV"
+            android:id="@+id/advcalc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:text="CLEAR"
+            android:id="@+id/clear"
+            android:width="24dp"
+            android:layout_height="match_parent"
+        android:layout_width="wrap_content" />
+
+</LinearLayout>
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TableRow
-            android:layout_weight="1"
-            android:layout_gravity="center">
-            <Button
-                android:text="ADV"
-                android:id="@+id/advcalc"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-            <Button
-                android:text="CLEAR"
-                android:id="@+id/clear"
-                android:layout_width="wrap_content"
-                android:layout_gravity="right"
-                android:layout_height="match_parent"/>
-        </TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
 
         <TableRow
             android:layout_weight="1"
