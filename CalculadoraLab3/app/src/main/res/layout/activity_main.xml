@@ -82,29 +82,35 @@
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
         </LinearLayout>
+
         <LinearLayout
+            android:weightSum="20"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
             <Button
                 android:text="4"
                 android:id="@+id/cuatro"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"/>
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="80dp"/>
             <Button
                 android:text="5"
                 android:id="@+id/cinco"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"/>
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"/>
             <Button
                 android:text="6"
                 android:id="@+id/seis"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"/>
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"/>
             <Button
                 android:text="X"
                 android:id="@+id/por"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"/>
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"/>
 
         </LinearLayout>
         <LinearLayout
