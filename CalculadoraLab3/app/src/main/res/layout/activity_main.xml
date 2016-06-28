@@ -12,12 +12,14 @@
 
 
     <EditText
-
         android:hint="0"
         android:id="@+id/edit"
         android:textSize="24pt"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="#adaeac"
+        android:textColor="#35382f"/>
 
     <LinearLayout
         android:layout_marginTop="0dp"
@@ -30,27 +32,33 @@
         android:weightSum="10">
 
         <Button
+            style="?android:borderlessButtonStyle"
+            android:background="#0c1f63"
+            android:textColor="#ffffff"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
             android:paddingTop="0dp"
             android:paddingBottom="0dp"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:text="Advanced Panel"
             android:id="@+id/advcalc"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="7"/>
+            android:layout_weight="7.5"/>
 
         <Button
+            style="?android:borderlessButtonStyle"
+            android:background="#0c1f63"
+            android:textColor="#ffffff"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
             android:paddingTop="0dp"
             android:paddingBottom="0dp"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:text="CLEAR"
             android:id="@+id/clear"
             android:layout_width="0dp"
-            android:layout_weight="3"
+            android:layout_weight="2.5"
             android:layout_height="match_parent" />
 
     </LinearLayout>
@@ -74,28 +82,40 @@
             android:layout_width="match_parent"
             android:layout_height="120dp">
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="7"
                 android:id="@+id/siete"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="8"
                 android:id="@+id/ocho"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="9"
                 android:id="@+id/nueve"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#0c1f63"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="/"
                 android:id="@+id/divide"
                 android:layout_width="0dp"
@@ -104,34 +124,47 @@
         </LinearLayout>
 
         <LinearLayout
+
             android:paddingTop="0dp"
             android:paddingBottom="0dp"
             android:weightSum="20"
             android:layout_width="match_parent"
             android:layout_height="110dp">
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="4"
                 android:id="@+id/cuatro"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="5"
                 android:id="@+id/cinco"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="6"
                 android:id="@+id/seis"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#0c1f63"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="X"
                 android:id="@+id/por"
                 android:layout_width="0dp"
@@ -145,31 +178,43 @@
             android:paddingBottom="0dp"
             android:weightSum="20"
             android:layout_width="match_parent"
-            android:layout_height="100dp">
+            android:layout_height="110dp">
 
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="1"
                 android:id="@+id/uno"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="2"
                 android:id="@+id/dos"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="3"
                 android:id="@+id/tres"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="40sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#0c1f63"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="-"
                 android:id="@+id/menos"
                 android:layout_width="0dp"
@@ -183,32 +228,44 @@
             android:paddingBottom="0dp"
             android:weightSum="20"
             android:layout_width="match_parent"
-            android:layout_height="100dp">
+            android:layout_height="120dp">
 
 
             <Button
-                android:textSize="40sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="."
                 android:id="@+id/punto"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="40sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#314fba"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="0"
                 android:id="@+id/cero"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="40sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#0c1f63"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="="
                 android:id="@+id/igual"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"/>
             <Button
-                android:textSize="40sp"
+                style="?android:borderlessButtonStyle"
+                android:background="#0c1f63"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
                 android:text="+"
                 android:id="@+id/mas"
                 android:layout_width="0dp"
